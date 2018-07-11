@@ -1,0 +1,13 @@
+.header {
+  position: absolute;
+  padding-top: 0px;
+  margin-top: 0px;
+  display: flex;
+  width: 100%;
+  z-index: 2;
+  font-family: monospace;
+}
+
+.header > div {
+  flex: 1;
+}
