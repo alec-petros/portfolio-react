@@ -21,7 +21,7 @@ class Header extends React.Component {
         <div className="btn btn-music" onClick={() => this.props.history.push('/music')}>
           <span className="btn-text">Music</span>
         </div>
-        <div className="btn btn-blog" onClick={() => this.props.history.push('/blog')}>
+        <div className="btn btn-blog" onClick={() => window.location = 'https://medium.com/@alecpetros'}>
           <span className="btn-text">Blog</span>
         </div>
       </div>
