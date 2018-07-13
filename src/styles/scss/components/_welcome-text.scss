@@ -1,9 +1,10 @@
-.bio {
+.welcome-text {
 
   padding-left: 35vh;
   padding-right: 35vh;
   font-family: monospace;
   color: $color-primary;
+  animation: fadeInLeft 1s ease-out;
 
   &-heading {
     text-align: center;
@@ -17,7 +18,7 @@
 
     &-p {
       text-align: left;
-      font-size: 14px;
+      font-size: 19px;
     }
   }
 }

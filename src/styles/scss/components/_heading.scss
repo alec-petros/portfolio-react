@@ -1,5 +1,7 @@
 .heading {
 
+  -webkit-backface-visibility: hidden;
+
   &__img {
     position: relative;
     height: 35vh;
@@ -11,13 +13,13 @@
     background-size: cover;
     background-position: center;
     z-index: 0;
-    animation: moveShape 3s ease-out;
+    animation: moveShape 1s ease-out;
     clip-path: polygon(0 0, 100% 0, 100% 65%, 50% 100%, 0% 65%);
   }
 
   &-primary {
     position: absolute;
-    top: 20%;
+    top: 17%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -27,6 +29,7 @@
     // text-shadow: -1px 0 3px black, 0 1px 3px black, 1px 0 3px black, 0 -1px 3px black;
     text-transform: uppercase;
     font-family: monospace;
+    animation: fadeInRight 1s ease-out;
 
     &-main {
       font-size: 40px;

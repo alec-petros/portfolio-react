@@ -7,19 +7,19 @@ class Header extends React.Component {
     return (
       <div className="header">
         <div className="btn btn-home" onClick={() => this.props.history.push('/')}>
-          Home
+          <span className="btn-text">Home</span>
         </div>
         <div className="btn btn-projects" onClick={() => this.props.history.push('/projects')}>
-          Projects
+          <span className="btn-text">Projects</span>
         </div>
-        <div className="btn btn-bio">
-          <Link className="btn-text" to="/bio">Bio</Link>
+        <div className="btn btn-bio" onClick={() => this.props.history.push('/bio')}>
+          <span className="btn-text">Bio</span>
         </div>
-        <div className="btn btn-music">
-          <Link className="btn-text" to="/music">Music</Link>
+        <div className="btn btn-music" onClick={() => this.props.history.push('/music')}>
+          <span className="btn-text">Music</span>
         </div>
-        <div className="btn btn-blog">
-          <Link className="btn-text" to="/blog">blog</Link>
+        <div className="btn btn-blog" onClick={() => this.props.history.push('/blog')}>
+          <span className="btn-text">Blog</span>
         </div>
       </div>
     )

@@ -6,4 +6,5 @@
 
 body {
   background-color: $color-secondary-dark;
+  -webkit-backface-visibility: hidden;
 }
