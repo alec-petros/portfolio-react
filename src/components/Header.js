@@ -1,15 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 
-export default class Header extends React.Component {
+class Header extends React.Component {
   render() {
+
     return (
       <div className="header">
-        <div className="btn btn-home">
-          <Link className="btn-text" to="/">Home</Link>
+        <div className="btn btn-home" onClick={() => this.props.history.push('/')}>
+          Home
         </div>
-        <div className="btn btn-projects">
-          <Link className="btn-text" to="/projects">Projects</Link>
+        <div className="btn btn-projects" onClick={() => this.props.history.push('/projects')}>
+          Projects
         </div>
         <div className="btn btn-bio">
           <Link className="btn-text" to="/bio">Bio</Link>
@@ -24,3 +25,5 @@ export default class Header extends React.Component {
     )
   }
 }
+
+export default withRouter(Header)
