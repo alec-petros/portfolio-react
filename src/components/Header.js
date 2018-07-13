@@ -9,6 +9,9 @@ class Header extends React.Component {
         <div className="btn btn-home" onClick={() => this.props.history.push('/')}>
           <span className="btn-text">Home</span>
         </div>
+        <div className="btn btn-resume" onClick={() => this.props.history.push('/resume')}>
+          <span className="btn-text">Resume</span>
+        </div>
         <div className="btn btn-projects" onClick={() => this.props.history.push('/projects')}>
           <span className="btn-text">Projects</span>
         </div>

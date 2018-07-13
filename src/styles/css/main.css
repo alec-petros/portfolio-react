@@ -131,4 +131,15 @@ body {
 .header > div {
   flex: 1; }
 
+.bio-img {
+  position: absolute;
+  width: 50%;
+  left: 25%; }
+  .bio-img-container {
+    width: 100%;
+    height: 35vh;
+    clip-path: polygon(0 0, 100% 0, 100% 65%, 50% 100%, 0% 65%);
+    overflow: hidden;
+    animation: moveShape 1s ease-out; }
+
 /*# sourceMappingURL=main.css.map */
