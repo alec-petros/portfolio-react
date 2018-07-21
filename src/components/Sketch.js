@@ -10,7 +10,7 @@ export default function Sketch (p) {
       let noise = p.createVector(p.map(p.noise(this.t.x), 0, 1, -p.width/8, p.width/8), p.map(p.noise(this.t.y), 0, 1, -p.height / 2, p.height / 2));
       this.pos = noise;
       this.t.x += 0.001;
-      this.t.y += 0.0001;
+      this.t.y += 0.0005;
     }
 
     vector = () => {
