@@ -10,6 +10,8 @@ import Music from './components/Music'
 import Resume from './components/Resume'
 import { withRouter } from 'react-router-dom';
 import './styles/css/main.css';
+import P5Wrapper from 'react-p5-wrapper';
+import Sketch from './components/Sketch'
 
 class App extends Component {
   render() {
@@ -17,6 +19,7 @@ class App extends Component {
     return (
       <div>
         <Header />
+        <P5Wrapper className="sketch" sketch={Sketch} />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/bio" component={Bio} />

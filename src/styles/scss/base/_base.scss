@@ -5,6 +5,13 @@
 }
 
 body {
-  background-color: $color-secondary-dark;
+  background-color: black;
   -webkit-backface-visibility: hidden;
+}
+
+#defaultCanvas0 {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  z-index: -1;
 }

@@ -39,8 +39,14 @@
   font-family: monospace; }
 
 body {
-  background-color: #25434A;
+  background-color: black;
   -webkit-backface-visibility: hidden; }
+
+#defaultCanvas0 {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  z-index: -1; }
 
 .email {
   text-decoration: none;
